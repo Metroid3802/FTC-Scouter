@@ -1,1 +1,0 @@
-The main directory with all the source code and what have you
