@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.actionbarcompat;
+package org.cmcatee.ftcalliancecalculator;
 
 import android.app.Activity;
 import android.os.Bundle;
