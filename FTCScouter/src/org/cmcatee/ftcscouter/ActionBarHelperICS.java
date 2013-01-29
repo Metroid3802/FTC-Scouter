@@ -1,4 +1,4 @@
-package org.cmcatee.ftcascouter;
+package org.cmcatee.ftcscouter;
 
 import android.app.Activity;
 import android.content.Context;

@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 /**
- * An extension of {@link ActionBarHelper} that provides Android 3.0-specific functionality for
+ * An extension of {@link ftcscouterHelper} that provides Android 3.0-specific functionality for
  * Honeycomb tablets. It thus requires API level 11.
  */
 public class ActionBarHelperHoneycomb extends ActionBarHelper {
@@ -43,7 +43,7 @@ public class ActionBarHelperHoneycomb extends ActionBarHelper {
                             getActionBarThemedContext().getSystemService(
                                     Context.LAYOUT_INFLATER_SERVICE);
                     mRefreshIndeterminateProgressView = inflater.inflate(
-                            R.layout.actionbar_indeterminate_progress, null);
+                            R.layout.ftcscouter_indeterminate_progress, null);
                 }
 
                 refreshItem.setActionView(mRefreshIndeterminateProgressView);

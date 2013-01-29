@@ -48,7 +48,7 @@ public class ActionBarHelperBase extends ActionBarHelper {
     @Override
     public void onPostCreate(Bundle savedInstanceState) {
         mActivity.getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,
-                R.layout.actionbar_compat);
+                R.layout.ftcscouter);
         setupActionBar();
 
         SimpleMenu menu = new SimpleMenu(mActivity);
@@ -66,8 +66,8 @@ public class ActionBarHelperBase extends ActionBarHelper {
      * Sets up the compatibility action bar with the given title.
      */
     private void setupActionBar() {
-        final ViewGroup actionBarCompat = getActionBarCompat();
-        if (actionBarCompat == null) {
+        final ViewGroup ftcScouter = getftcScouter();
+        if (ftcScouter == null) {
             return;
         }
 
@@ -83,18 +83,18 @@ public class ActionBarHelperBase extends ActionBarHelper {
         addActionItemCompatFromMenuItem(homeItem);
 
         // Add title text
-        TextView titleText = new TextView(mActivity, null, R.attr.actionbarCompatTitleStyle);
+        TextView titleText = new TextView(mActivity, null, R.attr.ftcScouterTitleStyle);
         titleText.setLayoutParams(springLayoutParams);
         titleText.setText(mActivity.getTitle());
-        actionBarCompat.addView(titleText);
+        ftcScouter.addView(titleText);
     }
 
     /**{@inheritDoc}*/
     @Override
     public void setRefreshActionItemState(boolean refreshing) {
-        View refreshButton = mActivity.findViewById(R.id.actionbar_compat_item_refresh);
+        View refreshButton = mActivity.findViewById(R.id.ftcscouter_item_refresh);
         View refreshIndicator = mActivity.findViewById(
-                R.id.actionbar_compat_item_refresh_progress);
+                R.id.ftcscouter_item_refresh_progress);
 
         if (refreshButton != null) {
             refreshButton.setVisibility(refreshing ? View.GONE : View.VISIBLE);
@@ -121,7 +121,7 @@ public class ActionBarHelperBase extends ActionBarHelper {
     /**{@inheritDoc}*/
     @Override
     protected void onTitleChanged(CharSequence title, int color) {
-        TextView titleView = (TextView) mActivity.findViewById(R.id.actionbar_compat_title);
+        TextView titleView = (TextView) mActivity.findViewById(R.id.ftcscouter_title);
         if (titleView != null) {
             titleView.setText(title);
         }
@@ -139,20 +139,20 @@ public class ActionBarHelperBase extends ActionBarHelper {
      * Returns the {@link android.view.ViewGroup} for the action bar on phones (compatibility action
      * bar). Can return null, and will return null on Honeycomb.
      */
-    private ViewGroup getActionBarCompat() {
-        return (ViewGroup) mActivity.findViewById(R.id.actionbar_compat);
+    private ViewGroup getftcScouter() {
+        return (ViewGroup) mActivity.findViewById(R.id.ftcscouter);
     }
 
     /**
      * Adds an action button to the compatibility action bar, using menu information from a {@link
      * android.view.MenuItem}. If the menu item ID is <code>menu_refresh</code>, the menu item's
      * state can be changed to show a loading spinner using
-     * {@link com.example.android.actionbarcompat.ActionBarHelperBase#setRefreshActionItemState(boolean)}.
+     * {@link com.example.android.ftcScouter.ActionBarHelperBase#setRefreshActionItemState(boolean)}.
      */
     private View addActionItemCompatFromMenuItem(final MenuItem item) {
         final int itemId = item.getItemId();
 
-        final ViewGroup actionBar = getActionBarCompat();
+        final ViewGroup actionBar = getftcScouter();
         if (actionBar == null) {
             return null;
         }
@@ -160,16 +160,16 @@ public class ActionBarHelperBase extends ActionBarHelper {
         // Create the button
         ImageButton actionButton = new ImageButton(mActivity, null,
                 itemId == android.R.id.home
-                        ? R.attr.actionbarCompatItemHomeStyle
-                        : R.attr.actionbarCompatItemStyle);
+                        ? R.attr.ftcScouterItemHomeStyle
+                        : R.attr.ftcScouterItemStyle);
         actionButton.setLayoutParams(new ViewGroup.LayoutParams(
                 (int) mActivity.getResources().getDimension(
                         itemId == android.R.id.home
-                                ? R.dimen.actionbar_compat_button_home_width
-                                : R.dimen.actionbar_compat_button_width),
+                                ? R.dimen.ftcscouter_button_home_width
+                                : R.dimen.ftcscouter_button_width),
                 ViewGroup.LayoutParams.FILL_PARENT));
         if (itemId == R.id.menu_refresh) {
-            actionButton.setId(R.id.actionbar_compat_item_refresh);
+            actionButton.setId(R.id.ftcscouter_item_refresh);
         }
         actionButton.setImageDrawable(item.getIcon());
         actionButton.setScaleType(ImageView.ScaleType.CENTER);
@@ -186,12 +186,12 @@ public class ActionBarHelperBase extends ActionBarHelper {
             // Refresh buttons should be stateful, and allow for indeterminate progress indicators,
             // so add those.
             ProgressBar indicator = new ProgressBar(mActivity, null,
-                    R.attr.actionbarCompatProgressIndicatorStyle);
+                    R.attr.ftcScouterProgressIndicatorStyle);
 
             final int buttonWidth = mActivity.getResources().getDimensionPixelSize(
-                    R.dimen.actionbar_compat_button_width);
+                    R.dimen.ftcscouter_button_width);
             final int buttonHeight = mActivity.getResources().getDimensionPixelSize(
-                    R.dimen.actionbar_compat_height);
+                    R.dimen.ftcscouter_height);
             final int progressIndicatorWidth = buttonWidth / 2;
 
             LinearLayout.LayoutParams indicatorLayoutParams = new LinearLayout.LayoutParams(
@@ -203,7 +203,7 @@ public class ActionBarHelperBase extends ActionBarHelper {
                     0);
             indicator.setLayoutParams(indicatorLayoutParams);
             indicator.setVisibility(View.GONE);
-            indicator.setId(R.id.actionbar_compat_item_refresh_progress);
+            indicator.setId(R.id.ftcscouter_item_refresh_progress);
             actionBar.addView(indicator);
         }
 

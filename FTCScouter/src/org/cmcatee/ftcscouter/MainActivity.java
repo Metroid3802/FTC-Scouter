@@ -1,6 +1,7 @@
 package org.cmcatee.ftcscouter;
 
 import android.os.Bundle;
+import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -13,7 +14,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.ftcscouter);
 
         findViewById(R.id.toggle_title).setOnClickListener(new View.OnClickListener() {
             @Override
