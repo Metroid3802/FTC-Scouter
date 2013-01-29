@@ -1,4 +1,4 @@
-FTC Alliance Calculator
+FTC Scouter
 
 Calculates the optimal alliance for FTC teams
 

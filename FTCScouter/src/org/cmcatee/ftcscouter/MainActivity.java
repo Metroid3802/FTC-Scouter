@@ -1,4 +1,4 @@
-package org.cmcatee.ftcalliancecalculator;
+package org.cmcatee.ftcscouter;
 
 import android.os.Bundle;
 import android.view.Menu;

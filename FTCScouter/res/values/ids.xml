@@ -1,0 +1,7 @@
+<resources>
+    <item type="id" name="ftcscouter" />
+    <item type="id" name="ftcscouter_title" />
+    <item type="id" name="ftcscouter_item_refresh_progress" />
+    <item type="id" name="ftcscouter_item_refresh" />
+    <item type="id" name="menu_refresh" />
+</resources>
