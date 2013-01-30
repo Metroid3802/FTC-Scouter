@@ -27,7 +27,7 @@ public class EditTeamActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 		ActionBar actionBar = getActionBar();
-		
+		setContentView(R.layout.editteam);
     }
 
     /**

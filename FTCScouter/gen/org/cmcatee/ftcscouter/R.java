@@ -40,7 +40,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class dimen {
         public static final int ftcscouter_button_home_width=0x7f050002;
         public static final int ftcscouter_button_width=0x7f050001;
-        public static final int ftcscouter_height=0x7f050000;
+        public static final int ftcscouter_height=0x7f050003;
+        public static final int standard=0x7f050000;
     }
     public static final class drawable {
         public static final int actionbar_shadow=0x7f020000;
@@ -63,11 +64,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int list=0x7f060006;
         public static final int menu_new=0x7f060007;
         public static final int menu_refresh=0x7f060004;
-        public static final int text=0x7f060005;
+        public static final int mylist=0x7f060005;
     }
     public static final class layout {
-        public static final int ftcscouter=0x7f030000;
-        public static final int ftcscouter_indeterminate_progress=0x7f030001;
+        public static final int editteam=0x7f030000;
+        public static final int ftcscouter=0x7f030001;
+        public static final int ftcscouter_indeterminate_progress=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -78,6 +80,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int menu_new=0x7f070005;
         public static final int menu_refresh=0x7f070003;
         public static final int menu_search=0x7f070004;
+        public static final int name_hint=0x7f070006;
+        public static final int number_hint=0x7f070007;
         public static final int toggle_title=0x7f070002;
     }
     public static final class style {

@@ -6,4 +6,6 @@
     <string name="menu_refresh">Refresh</string>
     <string name="menu_search">Search</string>
     <string name="menu_new">Add</string>
+	<string name="name_hint">Team Name</string>
+	<string name="number_hint">Team Number</string>
 </resources>

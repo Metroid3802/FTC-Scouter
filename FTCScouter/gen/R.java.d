@@ -23,6 +23,7 @@ C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\drawable-xhdpi\ic_ac
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\drawable-xhdpi\ic_action_share.png \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\drawable-xhdpi\ic_home.png \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\drawable-xhdpi\ic_launcher.png \
+C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\layout\editteam.xml \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\layout\ftcscouter.xml \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\layout-v11\ftcscouter_indeterminate_progress.xml \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\menu\main.xml \
