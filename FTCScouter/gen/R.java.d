@@ -35,6 +35,7 @@ C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\values\themes.xml \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\values-v11\themes.xml \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\values-v13\themes.xml \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\bin\res\drawable-hdpi\actionbar_shadow.9.png \
+C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\bin\res\drawable-hdpi\ic_action_new.png \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\bin\res\drawable-hdpi\ic_action_refresh.png \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\bin\res\drawable-hdpi\ic_action_search.png \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\bin\res\drawable-hdpi\ic_action_share.png \

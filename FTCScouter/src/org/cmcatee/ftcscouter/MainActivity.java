@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 		ActionBar actionBar = getActionBar();
-		
+		setContentView(R.layout.ftcscouter);
     }
 
     /**
@@ -71,7 +71,8 @@ public class MainActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
 			case R.id.menu_new:
-				
+				Intent intent = new Intent(this, EditTeamActivity.class);
+				startActivity(intent);
 				return true;
         }
 
