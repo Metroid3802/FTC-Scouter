@@ -1,71 +1,90 @@
 package org.cmcatee.ftcscouter;
 
-import android.os.Bundle;
+import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Build;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Toast;
+import android.widget.Button;
+import android.widget.EditText;
 import android.R.*;
 
-public class MainActivity extends ActionBarActivity {
-    private boolean mAlternateTitle = false;
+/**
+ * This class provides a basic demonstration of how to write an Android
+ * activity. Inside of its window, it places a single view: an EditText that
+ * displays and edits some internal text.
+ */
+public class MainActivity extends Activity {
+    
+    public MainActivity() {
+    }
 
+    /** Called with the activity is first created. */
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ftcscouter);
-
-        findViewById(R.id.toggle_title).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mAlternateTitle) {
-                    setTitle(R.string.app_name);
-                } else {
-                    setTitle(R.string.alternate_title);
-                }
-                mAlternateTitle = !mAlternateTitle;
-            }
-        });
+		ActionBar actionBar = getActionBar();
+		
     }
 
+    /**
+     * Called when the activity is about to start interacting with the user.
+     */
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    /**
+     * Called when your activity's options menu needs to be created.
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.main, menu);
-
-        // Calling super after populating the menu is necessary here to ensure that the
-        // action bar helpers have a chance to handle this event.
-        return super.onCreateOptionsMenu(menu);
+        super.onCreateOptionsMenu(menu);
+		MenuInflater inflater = getMenuInflater();
+		inflater.inflate(R.menu.main, menu);
+		return true;
     }
 
+    /**
+     * Called right before your activity's option menu is displayed.
+     */
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+
+        return true;
+    }
+
+    /**
+     * Called when a menu item is selected.
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case android.R.id.home:
-                Toast.makeText(this, "Tapped home", Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.menu_refresh:
-                Toast.makeText(this, "Fake refreshing...", Toast.LENGTH_SHORT).show();
-                getActionBarHelper().setRefreshActionItemState(true);
-                getWindow().getDecorView().postDelayed(
-                        new Runnable() {
-                            @Override
-                            public void run() {
-                                getActionBarHelper().setRefreshActionItemState(false);
-                            }
-                        }, 1000);
-                break;
-
-            case R.id.menu_search:
-                Toast.makeText(this, "Tapped search", Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.menu_share:
-                Toast.makeText(this, "Tapped share", Toast.LENGTH_SHORT).show();
-                break;
+			case R.id.menu_new:
+				
+				return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
+
+    /**
+     * A call-back for when the user presses the back button.
+     */
+    OnClickListener mBackListener = new OnClickListener() {
+        public void onClick(View v) {
+            finish();
+        }
+    };
+
 }

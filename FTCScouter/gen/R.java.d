@@ -3,6 +3,7 @@ C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\gen\org\cmcatee\ftcscout
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\drawable\ftcscouter_item_focused.xml \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\drawable\ftcscouter_item_pressed.xml \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\drawable-hdpi\actionbar_shadow.9.png \
+C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\drawable-hdpi\ic_action_new.png \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\drawable-hdpi\ic_action_refresh.png \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\drawable-hdpi\ic_action_search.png \
 C:\Users\Connor\Documents\GitHub\FTC-Scouter\FTCScouter\res\drawable-hdpi\ic_action_share.png \

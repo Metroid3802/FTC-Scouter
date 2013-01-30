@@ -1,6 +1,6 @@
 <resources>
 
-    <declare-styleable name="AppTheme">
+    <declare-styleable name="ftcScouterTheme">
         <attr name="ftcScouterTitleStyle" format="reference" />
         <attr name="ftcScouterItemStyle" format="reference" />
         <attr name="ftcScouterItemHomeStyle" format="reference" />

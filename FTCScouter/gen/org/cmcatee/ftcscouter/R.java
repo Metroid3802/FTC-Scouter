@@ -47,22 +47,23 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ftcscouter_item=0x7f020001;
         public static final int ftcscouter_item_focused=0x7f020002;
         public static final int ftcscouter_item_pressed=0x7f020003;
-        public static final int ic_action_refresh=0x7f020004;
-        public static final int ic_action_search=0x7f020005;
-        public static final int ic_action_share=0x7f020006;
-        public static final int ic_home=0x7f020007;
-        public static final int ic_launcher=0x7f020008;
-        public static final int ic_menu_share=0x7f020009;
+        public static final int ic_action_new=0x7f020004;
+        public static final int ic_action_refresh=0x7f020005;
+        public static final int ic_action_search=0x7f020006;
+        public static final int ic_action_share=0x7f020007;
+        public static final int ic_home=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int ic_menu_share=0x7f02000a;
     }
     public static final class id {
         public static final int ftcscouter=0x7f060000;
         public static final int ftcscouter_item_refresh=0x7f060003;
         public static final int ftcscouter_item_refresh_progress=0x7f060002;
         public static final int ftcscouter_title=0x7f060001;
+        public static final int list=0x7f060006;
+        public static final int menu_new=0x7f060007;
         public static final int menu_refresh=0x7f060004;
-        public static final int menu_search=0x7f060006;
-        public static final int menu_share=0x7f060007;
-        public static final int toggle_title=0x7f060005;
+        public static final int text=0x7f060005;
     }
     public static final class layout {
         public static final int ftcscouter=0x7f030000;
@@ -74,82 +75,19 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class string {
         public static final int alternate_title=0x7f070001;
         public static final int app_name=0x7f070000;
+        public static final int menu_new=0x7f070005;
         public static final int menu_refresh=0x7f070003;
         public static final int menu_search=0x7f070004;
-        public static final int menu_share=0x7f070005;
         public static final int toggle_title=0x7f070002;
     }
     public static final class style {
-        /**  Any customizations for your app running on 4.0+ devices here 
-         */
-        public static final int FTCAllianceCalculatorTheme=0x7f080002;
         /**  Any customizations for your app running on pre-3.0 devices here 
+ Any customizations for your app running on 3.0+ devices here 
+ Any customizations for your app running on 4.0+ devices here 
          */
         public static final int FTCScouterTheme=0x7f080000;
-        /**  Any customizations for your app running on 3.0+ devices here 
-         */
-        public static final int MyAppTheme=0x7f080001;
     }
     public static final class styleable {
-        /** Attributes that can be used with a AppTheme.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppTheme_ftcScouterItemHomeStyle org.cmcatee.ftcscouter:ftcScouterItemHomeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppTheme_ftcScouterItemStyle org.cmcatee.ftcscouter:ftcScouterItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppTheme_ftcScouterProgressIndicatorStyle org.cmcatee.ftcscouter:ftcScouterProgressIndicatorStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppTheme_ftcScouterTitleStyle org.cmcatee.ftcscouter:ftcScouterTitleStyle}</code></td><td></td></tr>
-           </table>
-           @see #AppTheme_ftcScouterItemHomeStyle
-           @see #AppTheme_ftcScouterItemStyle
-           @see #AppTheme_ftcScouterProgressIndicatorStyle
-           @see #AppTheme_ftcScouterTitleStyle
-         */
-        public static final int[] AppTheme = {
-            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003
-        };
-        /**
-          <p>This symbol is the offset where the {@link org.cmcatee.ftcscouter.R.attr#ftcScouterItemHomeStyle}
-          attribute's value can be found in the {@link #AppTheme} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ftcScouterItemHomeStyle
-        */
-        public static final int AppTheme_ftcScouterItemHomeStyle = 2;
-        /**
-          <p>This symbol is the offset where the {@link org.cmcatee.ftcscouter.R.attr#ftcScouterItemStyle}
-          attribute's value can be found in the {@link #AppTheme} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ftcScouterItemStyle
-        */
-        public static final int AppTheme_ftcScouterItemStyle = 1;
-        /**
-          <p>This symbol is the offset where the {@link org.cmcatee.ftcscouter.R.attr#ftcScouterProgressIndicatorStyle}
-          attribute's value can be found in the {@link #AppTheme} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ftcScouterProgressIndicatorStyle
-        */
-        public static final int AppTheme_ftcScouterProgressIndicatorStyle = 3;
-        /**
-          <p>This symbol is the offset where the {@link org.cmcatee.ftcscouter.R.attr#ftcScouterTitleStyle}
-          attribute's value can be found in the {@link #AppTheme} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:ftcScouterTitleStyle
-        */
-        public static final int AppTheme_ftcScouterTitleStyle = 0;
         /** Attributes that can be used with a BezelImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -185,5 +123,64 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android:maskDrawable
         */
         public static final int BezelImageView_maskDrawable = 0;
+        /** Attributes that can be used with a ftcScouterTheme.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ftcScouterTheme_ftcScouterItemHomeStyle org.cmcatee.ftcscouter:ftcScouterItemHomeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ftcScouterTheme_ftcScouterItemStyle org.cmcatee.ftcscouter:ftcScouterItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ftcScouterTheme_ftcScouterProgressIndicatorStyle org.cmcatee.ftcscouter:ftcScouterProgressIndicatorStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ftcScouterTheme_ftcScouterTitleStyle org.cmcatee.ftcscouter:ftcScouterTitleStyle}</code></td><td></td></tr>
+           </table>
+           @see #ftcScouterTheme_ftcScouterItemHomeStyle
+           @see #ftcScouterTheme_ftcScouterItemStyle
+           @see #ftcScouterTheme_ftcScouterProgressIndicatorStyle
+           @see #ftcScouterTheme_ftcScouterTitleStyle
+         */
+        public static final int[] ftcScouterTheme = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003
+        };
+        /**
+          <p>This symbol is the offset where the {@link org.cmcatee.ftcscouter.R.attr#ftcScouterItemHomeStyle}
+          attribute's value can be found in the {@link #ftcScouterTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:ftcScouterItemHomeStyle
+        */
+        public static final int ftcScouterTheme_ftcScouterItemHomeStyle = 2;
+        /**
+          <p>This symbol is the offset where the {@link org.cmcatee.ftcscouter.R.attr#ftcScouterItemStyle}
+          attribute's value can be found in the {@link #ftcScouterTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:ftcScouterItemStyle
+        */
+        public static final int ftcScouterTheme_ftcScouterItemStyle = 1;
+        /**
+          <p>This symbol is the offset where the {@link org.cmcatee.ftcscouter.R.attr#ftcScouterProgressIndicatorStyle}
+          attribute's value can be found in the {@link #ftcScouterTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:ftcScouterProgressIndicatorStyle
+        */
+        public static final int ftcScouterTheme_ftcScouterProgressIndicatorStyle = 3;
+        /**
+          <p>This symbol is the offset where the {@link org.cmcatee.ftcscouter.R.attr#ftcScouterTitleStyle}
+          attribute's value can be found in the {@link #ftcScouterTheme} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:ftcScouterTitleStyle
+        */
+        public static final int ftcScouterTheme_ftcScouterTitleStyle = 0;
     };
 }
