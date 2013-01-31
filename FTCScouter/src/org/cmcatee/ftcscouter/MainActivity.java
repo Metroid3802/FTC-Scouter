@@ -16,7 +16,6 @@ import android.view.View.OnClickListener;
 import android.widget.Toast;
 import android.widget.Button;
 import android.widget.EditText;
-import android.R.*;
 
 /**
  * This class provides a basic demonstration of how to write an Android

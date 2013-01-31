@@ -15,7 +15,6 @@ import android.view.View.OnClickListener;
 import android.widget.Toast;
 import android.widget.Button;
 import android.widget.EditText;
-import android.R.*;
 
 public class EditTeamActivity extends Activity {
 
@@ -28,7 +27,6 @@ public class EditTeamActivity extends Activity {
         super.onCreate(savedInstanceState);
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
-
 		setContentView(R.layout.editteam);
     }
 
