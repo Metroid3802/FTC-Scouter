@@ -27,6 +27,7 @@ public class EditTeamActivity extends Activity {
         super.onCreate(savedInstanceState);
 		ActionBar actionBar = getActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
+		actionBar.setTitle(R.string.editteam_title);
 		setContentView(R.layout.editteam);
     }
 

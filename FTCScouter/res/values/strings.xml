@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FTC Scouter</string>
+	<string name="editteam_title">Edit Team</string>
+	<string name="main_title">Teams</string>
     <string name="menu_new">Add</string>
 	<string name="name_hint">Team Name</string>
 	<string name="number_hint">Team Number</string>

@@ -74,9 +74,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     }
     public static final class string {
         public static final int app_name=0x7f070000;
-        public static final int menu_new=0x7f070001;
-        public static final int name_hint=0x7f070002;
-        public static final int number_hint=0x7f070003;
+        public static final int editteam_title=0x7f070001;
+        public static final int main_title=0x7f070002;
+        public static final int menu_new=0x7f070003;
+        public static final int name_hint=0x7f070004;
+        public static final int number_hint=0x7f070005;
     }
     public static final class style {
         /**  Any customizations for your app running on pre-3.0 devices here 

@@ -32,6 +32,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 		ActionBar actionBar = getActionBar();
+		actionBar.setTitle(R.string.main_title);
 		setContentView(R.layout.ftcscouter);
     }
 
